@@ -3,6 +3,10 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=~/Caskroom"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+alias python='python3'
+alias pip='pip3'
+
+
 # define colors
 C_DEFAULT="\[\033[m\]"
 C_WHITE="\[\033[1m\]"
