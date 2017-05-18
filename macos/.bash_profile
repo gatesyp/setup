@@ -3,11 +3,13 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=~/Caskroom"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+# Set python3 to be default
 alias python='python3'
+# Set pip3 to be default
 alias pip='pip3'
 
 
-# define colors
+# Define terminal colors. 
 C_DEFAULT="\[\033[m\]"
 C_WHITE="\[\033[1m\]"
 C_BLACK="\[\033[30m\]"
@@ -35,6 +37,7 @@ C_BG_CYAN="\[\033[46m\]"
 C_BG_LIGHTGRAY="\[\033[47m\]"
 
 
+# Export my own terminal colors. 
 export PS1="\n$C_LIGHTGREEN\u$C_DARKGRAY@$C_BLUE\h $C_DARKGRAY: $C_LIGHTYELLOW\w\n$C_DARKGRAY\$$C_DEFAULT "
 
 # Set up go workspace. 
