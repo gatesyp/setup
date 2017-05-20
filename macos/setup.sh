@@ -1,5 +1,5 @@
 # Install python3 and pip3. 
-brew install python3
+brew install python3 git bash-completion
 
 # Install syntax checker for python. 
 pip install flake8
@@ -10,3 +10,5 @@ python3 -m ipykernel install --user
 
 # Update system's bash_profile with mine. 
 mv ./.bash_profile ~/
+mv ./.gitexcludes ~/
+mv ./.gitconfig ~/
