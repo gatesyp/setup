@@ -3,6 +3,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
         . $(brew --prefix)/etc/bash_completion
     fi
 
+alias vim='/usr/local/Cellar/vim/8.0.0604/bin/vim'
+
+
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=~/Caskroom"
 # Add color to terminal. 
 export CLICOLOR=1
