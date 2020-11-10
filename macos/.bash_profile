@@ -3,9 +3,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
         . $(brew --prefix)/etc/bash_completion
     fi
 
-alias vim='/usr/local/Cellar/vim/8.0.0604/bin/vim'
-
-
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=~/Caskroom"
 # Add color to terminal. 
 export CLICOLOR=1
@@ -52,9 +49,3 @@ parse_git_branch() {
 
 # Export my own terminal colors - shows git branch as well 
 export PS1="\n$C_LIGHTGREEN\u$C_DARKGRAY@$C_BLUE\h $C_DARKGRAY: $C_LIGHTYELLOW\w $C_LIGHTCYAN\$(parse_git_branch)\n$C_DARKGRAY\$$C_DEFAULT "
-
-# Set up go workspace. 
-export GOPATH=$HOME/go
-export GOBIN=$HOME/go/bin
-export PATH=$PATH:$(go env GOPATH)/bin
-
